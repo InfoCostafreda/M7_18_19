@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300" 
+        Name="Form1">
+    <StackPanel>
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Margin="10">
+            <Label FontWeight="Bold"  Content="Indica el color de fons:" />
+            <StackPanel Margin="10">
+                <RadioButton Name="RadioVermell" Checked="chkCanviaColor">Vermell</RadioButton>
+                    <RadioButton Name="RadioVerd" Checked="chkCanviaColor">Verd</RadioButton>
+                    <RadioButton Name="RadioVioleta" Checked="chkCanviaColor">Violeta</RadioButton>
+                    
+                    <TextBox Name="txtBoxColor" TextChanged="txtBox_CanviaText"/>
+                </StackPanel>
+            
+        </StackPanel>
+        <StackPanel Margin="10">
+                <Label FontWeight="Bold">
+                    <TextBlock> Com vols fer el <LineBreak/> condicional?</TextBlock> 
+                </Label>
+                <StackPanel Margin="10">
+                <RadioButton Name="RadioSimple">Simple</RadioButton>
+                <RadioButton Name="RadioCompacte">Compacte</RadioButton>
+                    <RadioButton Name="RadioIfiElse">If i Else</RadioButton>
+                    <RadioButton Name="RadioSwitch">Switch</RadioButton>
+            </StackPanel>
+           
+        </StackPanel>
+        
+
+    </StackPanel>
+        <Button  Content="Aplica" Click="Button_Click"/>
+    </StackPanel>
+</Window>

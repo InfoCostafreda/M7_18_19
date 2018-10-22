@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="250">
+    <StackPanel Margin="10">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <StackPanel Margin="10" Width="100">
+                <Label Content="Introdueix text"/>
+                <TextBox  Name="txtBoxDades"/>
+                <Button Content="Afegeix" Click="Button_Click"/>
+            </StackPanel>
+            <StackPanel Margin="10" HorizontalAlignment="Right" Width="100">
+                <StackPanel Orientation="Horizontal">
+                    <Button Click="Button_Click_MostraAlumnes">
+                        <TextBlock>Mostra <LineBreak/> Alumnes
+                        </TextBlock> 
+                    </Button>
+                    <Button Click="Button_Click_MostraPrimers">
+                        <TextBlock>Mostra <LineBreak/> Primers
+                        </TextBlock>
+                    </Button>
+                </StackPanel>
+                <TextBlock Name="txtBlockMostra" TextWrapping="Wrap"></TextBlock>
+
+            </StackPanel>
+            
+        </StackPanel>
+       
+    </StackPanel>
+</Window>
